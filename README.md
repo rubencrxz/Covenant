@@ -1,1 +1,3 @@
-# Covenant
+# ©️ Covenant
+
+Covenant is a permissionless structured-products protocol on EVM chains. Users deposit a base (collateral) ERC20 into isolated markets and receive two synthetic tokens: an aToken (leveraged long exposure) and a zToken (debt leg with a perpetual interest rate). An internal concentrated-liquidity AMM, LatentSwap, sets the relative price between aToken and zToken. Each market is isolated and identified by base token, quote token, oracle curator, and exchange model. Users can mint (deposit → aToken + zToken), redeem (burn both → base), swap any pair within the market, and batch operations via multicall. Oracles (e.g. Chainlink, Pyth) feed prices through a curator; fees and interest accrue in the model and can be advanced with `updateState`.
